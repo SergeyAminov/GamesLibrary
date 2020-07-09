@@ -1,6 +1,7 @@
 package com.aminov.dao;
 
 import com.aminov.model.Game;
+import org.springframework.stereotype.Repository;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -10,6 +11,7 @@ This class is used only for example instead of connecting to any Data Base.
 
 */
 
+@Repository
 public class GameDAOImpl implements GameDAO {
 
     private static final AtomicInteger AUTO_ID = new AtomicInteger(0);
