@@ -17,6 +17,7 @@ public class GameDAOImpl implements GameDAO {
 
     static {
         Game game1 = new Game();
+        game1.setId(1);
         game1.setTitle("The last of us");
         game1.setYear(2013);
         game1.setGenre("Adventure");
@@ -24,6 +25,7 @@ public class GameDAOImpl implements GameDAO {
         games.put(game1.getId(), game1);
 
         Game game2 = new Game();
+        game2.setId(2);
         game2.setTitle("GTA 5");
         game2.setYear(2013);
         game2.setGenre("Sandbox");
@@ -31,6 +33,7 @@ public class GameDAOImpl implements GameDAO {
         games.put(game2.getId(), game2);
 
         Game game3 = new Game();
+        game3.setId(3);
         game3.setTitle("Civilization 6");
         game3.setYear(2016);
         game3.setGenre("Strategy");
@@ -38,6 +41,7 @@ public class GameDAOImpl implements GameDAO {
         games.put(game3.getId(), game3);
 
         Game game4 = new Game();
+        game4.setId(4);
         game4.setTitle("Halo 3");
         game4.setYear(2007);
         game4.setGenre("Shooter");
@@ -45,6 +49,7 @@ public class GameDAOImpl implements GameDAO {
         games.put(game4.getId(), game4);
 
         Game game5 = new Game();
+        game5.setId(5);
         game5.setTitle("Warcraft 3");
         game5.setYear(2003);
         game5.setGenre("Strategy");
