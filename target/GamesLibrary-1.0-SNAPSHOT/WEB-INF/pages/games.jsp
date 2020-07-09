@@ -12,6 +12,7 @@
 </head>
 <body>
     <h2>Hello world!</h2>
-    <h3><a href="editPage.jsp">Edit page</a></h3>
+    <p>${game}</p>
+    <h3><a href="/edit">Edit page</a></h3>
 </body>
 </html>
