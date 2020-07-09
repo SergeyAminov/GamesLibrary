@@ -62,4 +62,13 @@ public class GameController {
         return modelAndView;
     }
 
+    @RequestMapping(value = "/delete/{id}", method = RequestMethod.GET)
+    public ModelAndView deleteGame(@PathVariable("id") int id){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("redirect:/");
+        Game game = gameService.getById(id);
+        gameService.delete(game);
+        return modelAndView;
+    }
+
 }
