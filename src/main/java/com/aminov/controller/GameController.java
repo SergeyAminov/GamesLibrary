@@ -9,21 +9,10 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class GameController {
 
-    private static Game game;
-
-    static {
-        game = new Game();
-        game.setTitle("The last of us");
-        game.setYear(2013);
-        game.setGenre("Adventure");
-        game.setPlayed(true);
-    }
-
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public ModelAndView allFilms() {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("games");
-        modelAndView.addObject("game", game);
         return modelAndView;
     }
 
