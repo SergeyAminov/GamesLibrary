@@ -47,4 +47,19 @@ public class GameController {
         return modelAndView;
     }
 
+    @RequestMapping(value = "/add", method = RequestMethod.GET)
+    public ModelAndView addPage(){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("editPage");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/add", method = RequestMethod.POST)
+    public ModelAndView addGame(@ModelAttribute("game") Game game){
+        ModelAndView modelAndView = new ModelAndView();
+        gameService.add(game);
+        modelAndView.setViewName("redirect:/");
+        return modelAndView;
+    }
+
 }
