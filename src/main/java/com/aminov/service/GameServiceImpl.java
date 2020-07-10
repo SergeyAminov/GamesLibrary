@@ -26,21 +26,25 @@ public class GameServiceImpl implements GameService {
     }
 
     @Override
+    @Transactional
     public void add(Game game) {
         gameDAO.add(game);
     }
 
     @Override
+    @Transactional
     public void delete(Game game) {
         gameDAO.delete(game);
     }
 
     @Override
+    @Transactional
     public void edit(Game game) {
         gameDAO.edit(game);
     }
 
     @Override
+    @Transactional
     public Game getById(int id) {
         return gameDAO.getById(id);
     }

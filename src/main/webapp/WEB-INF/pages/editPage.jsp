@@ -36,10 +36,10 @@
         <label for="played">Played</label>
         <input type="text" name="played" id="played">
         <c:if test="${empty game.title}">
-            <input type="submit" value="Add new film">
+            <input type="submit" value="Add new game">
         </c:if>
         <c:if test="${!empty game.title}">
-            <input type="submit" value="Edit film">
+            <input type="submit" value="Edit game">
         </c:if>
     </form>
 </body>
