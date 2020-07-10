@@ -36,9 +36,7 @@ public class HibernateConfig {
     @Bean
     public DataSource dataSource(){
 
-        /* In future DriverManagerDataSource has to be replaced using some DataBaseConnectionPool (DBCP) library */
         BasicDataSource dataSource = new BasicDataSource();
-
         dataSource.setDriverClassName(environment.getProperty("jdbc.driverClassName"));
         dataSource.setUrl(environment.getRequiredProperty("jdbc.url"));
         dataSource.setUsername(environment.getRequiredProperty("jdbc.username"));
