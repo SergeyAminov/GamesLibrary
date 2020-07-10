@@ -10,6 +10,7 @@
 <html>
 <head>
     <title>Title</title>
+    <link href="<c:url value="/res/style.css"/>" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <h2>Films</h2>

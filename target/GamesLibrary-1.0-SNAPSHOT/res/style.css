@@ -1,0 +1,8 @@
+table {
+    border-spacing: 0 10px;
+    font:  bold 100% SansSerif, serif;
+    margin: 40px auto;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+}
